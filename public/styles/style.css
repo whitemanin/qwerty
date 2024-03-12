@@ -1,0 +1,373 @@
+/*-------------------------------------------------------*/
+/*null css*/
+/*-------------------------------------------------------*/
+*{padding: 0; margin: 0; border: 0;}
+*,*:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, :active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input buton, textarea{font-family:inherit ;}
+input ::-ms-clear{display: none;}
+button{cursor:pointer;}
+button ::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*-------------------------------------------------------*/
+body{
+    background-color: #DCDCDC;
+}
+/*-------------------------------------------------------*/
+/*Header*/
+/*-------------------------------------------------------*/
+.header{
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #202846;
+}
+.header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-left: 200px;
+}
+.header_ua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    margin-right: 40px;
+}
+#logo{
+    max-width: 100%;
+    max-height: 100%;
+}
+#ua{
+    max-width: 100%;
+    max-height: 100%;
+}
+.nav_panel{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+.nav_panel_elements{
+    text-align: center;
+    margin: auto;
+    padding: 0 20px;
+    border-right: #ffffff 2px solid;
+}
+.nav_panel_elements a{
+    font-size: 20px;
+    color: #ffffff;
+}
+/*-------------------------------------------------------*/
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+    background-color: transparent;
+    border: none;
+    margin-right: 5%;
+}
+#myBtn img{
+    width: 80px;
+}
+
+
+.slide_menu {
+    width: 70%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 70%; /* Фіксує ширину слайду */
+    margin: 0 auto;
+}
+.first_banner{
+    display: flex;
+    position: relative;
+    padding-top: 90px;
+}
+.first_banner img{
+    width: 70%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 70%; /* Фіксує ширину слайду */
+    margin: 50px auto 0 auto;
+}
+.last_banner{
+    display: flex;
+    position: relative;
+}
+.last_banner img{
+    width: 70%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 70%; /* Фіксує ширину слайду */
+    margin: 0 auto 50px auto;
+}
+
+.slider_banner{
+    padding: 50px 0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.slider_banner img{
+    width: 100%; /* Зображення на всю ширину слайда */
+    height: auto; /* Автоматична висота, щоб не спотворювати пропорції */
+}
+
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 0;
+    transition: 0.1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.1s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    margin-right: 60px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+
+.section_head {
+    background-color: #C6C6DC;
+    height: 120px;
+    width: 100%;
+    padding-left: 250px;
+    display: flex;
+}
+.section_head h1 {
+    font-size: 40px;
+    color: #202846;
+    text-align: center;
+    margin: auto 0;
+}
+.section_inner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 50px 0;
+    width: 100%;
+}
+.section_inner_img {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.section_inner_img img {
+    width: 75%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 75%; /* Фіксує ширину слайду */
+    margin: 0 auto;
+}
+.section_inner_text {
+    background-color: #CBCBCB;
+    width: 75%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 75%; /* Фіксує ширину слайду */
+    margin: 0 auto;
+    padding: 50px;
+}
+.section_inner_text p {
+    color: #202846;
+    font-size: 20px;
+}
+
+
+
+.third_section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 50px auto;
+}
+.third_section_inner {
+    width: 70%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 70%; /* Фіксує ширину слайду */
+    margin: 0 auto;
+}
+.third_section_inner_blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BDBDC6;
+    margin: 30px;
+    padding: 25px 90px;
+}
+.third_section_inner_blocks_img img {
+    width: 80%;
+}
+.third_section_inner_blocks_info h1 {
+    color: #202846;
+    font-size: 30px;
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: #ffffff 2px solid;
+}
+.third_section_inner_blocks_info p {
+    color: #202846;
+    font-size: 20px;
+    display: block;
+    background-color: #D7D7DD;
+    padding: 30px 60px;
+    text-align: center;
+}
+
+
+
+.fourth_section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+.fourth_section_info {
+    width: 60%; /* Розмір слайду - 50% ширини сторінки */
+    flex: 0 0 60%; /* Фіксує ширину слайду */
+    margin: 0 auto;
+    display: block;
+    justify-content: center; /* вирівнюємо по горизонталі */
+}
+.fourth_section_info_contacts {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center; /* вирівнюємо по горизонталі */
+}
+
+.fourth_section_info_contacts_number,
+.fourth_section_info_contacts_schedule,
+.fourth_section_info_contacts_email {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    flex-grow: 1; /* блоки будуть розтягуватись, щоб використовувати весь доступний простір */
+}
+
+.fourth_section_info_contacts h1 {
+    font-size: 30px;
+    color: #202846;
+    border-bottom: #202846 2px solid;
+    margin-bottom: 10px;
+}
+
+.fourth_section_info_contacts p {
+    font-size: 28px;
+    color: #202846;
+    text-align: center; /* вирівнюємо текст по центру */
+    margin: 0; /* видаляємо маржі, щоб не було зайвого простору */
+}
+
+.fourth_section_info_address {
+    display: flex;
+    justify-content: center; /* центрування по горизонталі */
+    padding: 0 0 50px 0;
+}
+
+.fourth_section_info_address_street, .fourth_section_info_address_map {
+    flex: 1; /* рівномірно розподіляємо простір між внутрішніми блоками */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* центрування по вертикалі */
+}
+
+.fourth_section_info_address h1 {
+    font-size: 30px;
+    color: #202846;
+    display: flex;
+    border-bottom: #202846 2px solid;
+    margin-bottom: 10px; /* відступ після заголовка */
+}
+
+.fourth_section_info_address p {
+    font-size: 28px;
+    color: #202846;
+    text-align: center;
+    margin: 0; /* відсутність зовнішніх відступів */
+}
+
+.fourth_section_info_address_map img {
+    max-width: 100%; /* зображення займатиме максимально доступну ширину */
+}
+
+
+.foot {
+    width: 100%;
+    background-color: #202846;
+    height: 70px;
+}
